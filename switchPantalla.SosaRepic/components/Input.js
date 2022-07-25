@@ -2,11 +2,13 @@ import { StyleSheet, TextInput } from "react-native";
 
 import React from "react";
 
-const Input = props => (
-    <TextInput style={{...styles.input, ...props.style}} placeholder={"Ingresar"}>  
+const Input = props => { 
+    
+    <TextInput style={{...styles.input, ...props.style}}>  
       {props.children}
-    </TextInput>
-)
+    </TextInput> 
+    
+}
 
 const styles = StyleSheet.create({
     input: {

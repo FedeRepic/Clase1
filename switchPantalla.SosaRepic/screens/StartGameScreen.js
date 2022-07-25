@@ -1,8 +1,18 @@
-import { Button, Keyboard, StyleSheet, Text, TextInput, TouchableWithoutFeedback, View } from "react-native"
+import {
+  Button,
+  Dimensions,
+  Keyboard,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableWithoutFeedback,
+  View
+} from "react-native"
 import React, { useState } from "react"
 
 import Card from "../components/Card"
 import Colors from "../constants/colors"
+import Input from "../components/Input"
 import NumberContainer from "../components/NumberContainer"
 
 const StartGameScreen = props => {
@@ -101,8 +111,9 @@ const styles = StyleSheet.create({
       fontFamily: 'PoppinsRegular'
     },  
     inputContainer: {
-      width: 300,
-      maxWidth: '80%',
+      width: '80%',
+      minWidth: 300,
+      maxWidth: '95%',
       padding: 20,
       alignItems: 'center',
     },
@@ -113,7 +124,7 @@ const styles = StyleSheet.create({
       paddingHorizontal: 15
     },
     button: {
-      width: 100
+      width: Dimensions.get('window').width / 4
     },
     input: {
       height: 30,
