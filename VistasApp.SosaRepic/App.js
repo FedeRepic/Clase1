@@ -2,14 +2,12 @@ import 'react-native-gesture-handler';
 
 import { StyleSheet, Text, View } from 'react-native';
 
-import ShopNavigator from './navigation/ShopNavigator';
-import { StatusBar } from 'expo-status-bar';
-import { useFonts } from 'expo-font';
+import MainNavigation from './navigation';
 
 export default function App() {
 
   return (
-    <ShopNavigator />
+    <MainNavigation />
   );
 }
 
